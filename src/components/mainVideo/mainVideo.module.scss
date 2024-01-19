@@ -1,0 +1,93 @@
+@import url("./../../assets/styles/fonts.scss");
+
+.mainVideo {
+  .mainVideo__container {
+    position: relative;
+
+    .container__video {
+      width: 100%;
+      height: 100%;
+      max-width: none;
+      object-fit: cover;
+      .background {
+        content: " ";
+        background-image: url("./../../assets/img/background.png");
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+      }
+      .video__item {
+        width: 100%;
+      }
+    }
+    .mainText {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .mainText__container {
+        z-index: 1;
+        position: absolute;
+        top: 10%;
+        width: 1646px;
+        height: 827px;
+        display: flex;
+        justify-content: center;
+        background: url("./../../assets/img/cross.png") left top no-repeat,
+          url("./../../assets/img/cross.png") center top no-repeat,
+          url("./../../assets/img/cross.png") right top no-repeat,
+          url("./../../assets/img/cross.png") left center no-repeat,
+          url("./../../assets/img/cross.png") left bottom no-repeat,
+          url("./../../assets/img/cross.png") center bottom no-repeat,
+          url("./../../assets/img/cross.png") right bottom no-repeat,
+          url("./../../assets/img/cross.png") right center no-repeat,
+          url("./../../assets/img/cross.png") 25% top no-repeat,
+          url("./../../assets/img/cross.png") 75% top no-repeat,
+          url("./../../assets/img/cross.png") 25% center no-repeat,
+          url("./../../assets/img/cross.png") 50% center no-repeat,
+          url("./../../assets/img/cross.png") 75% center no-repeat,
+          url("./../../assets/img/cross.png") 76% center no-repeat,
+          url("./../../assets/img/cross.png") 25% bottom no-repeat,
+          url("./../../assets/img/cross.png") 75% bottom no-repeat,
+          url("./../../assets/img/cross.png") 51% bottom no-repeat,
+          url("./../../assets/img/cross.png") 76% bottom no-repeat;
+
+        .mainText__title {
+          width: 928px;
+          z-index: 2;
+          text-transform: uppercase;
+          color: #ffffff;
+          text-align: center;
+          align-self: center;
+          font-size: 126px;
+          font-family: "Ermilov-Bold";
+
+          div:nth-child(1) {
+            text-align: left;
+          }
+          div:nth-child(4) {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+          }
+          div:nth-child(4)::before {
+            content: "〕";
+            font-size: 165px;
+            position: absolute;
+            color: #ff0000;
+            right: -165px;
+          }
+          div:nth-child(4)::after {
+            content: "〔";
+            font-size: 165px;
+            position: absolute;
+            color: #ff0000;
+            left: 0;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}
