@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import s from "./mainPage.module.scss"
 
 const Main = () => {
   return (
-    <div>main</div>
-  )
-}
+    <section className={s.main}>
+        
+    </section>
+  );
+};
 
-export default Main
+export default Main;
