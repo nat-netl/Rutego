@@ -29,7 +29,10 @@ const Merits = () => {
             <div className={s.title__items}>
               <div className={s.title__item}>
                 <div className={s.title_item__img_conteiner}>
-                  <img className={s.title_item__img} alt="" src={orangeImg} />
+                  <p
+                    className={s.title_item__img}
+                    style={{ backgroundImage: `url(${orangeImg})` }}
+                  ></p>
                 </div>
                 <p className={s.title_item__text}>
                   участник программы качества внедрения
@@ -38,14 +41,20 @@ const Merits = () => {
 
               <div className={s.title__item}>
                 <div className={s.title_item__img_conteiner}>
-                  <img className={s.title_item__img} alt="" src={purpleImg} />
+                  <p
+                    className={s.title_item__img}
+                    style={{ backgroundImage: `url(${purpleImg})` }}
+                  ></p>
                 </div>
                 <p className={s.title_item__text}>АТТЕСТОВАННЫЙ РАЗРАБОТЧИК</p>
               </div>
 
               <div className={s.title__item}>
                 <div className={s.title_item__img_conteiner}>
-                  <img className={s.title_item__img} alt="" src={blueImg} />
+                  <p
+                    className={s.title_item__img}
+                    style={{ backgroundImage: `url(${blueImg})` }}
+                  ></p>
                 </div>
                 <p className={s.title_item__text}>
                   УЧАСТНИК ПРОГРАММЫ КАЧЕСТВА ВНЕДРЕНИЯ

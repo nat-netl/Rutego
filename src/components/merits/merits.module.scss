@@ -46,6 +46,13 @@
               align-items: flex-end;
               justify-content: center;
 
+              .title_item__img {
+                width: 71px;
+                height: 71px;
+                background-repeat: no-repeat;
+                background-position: bottom;
+              }
+
               &::after {
                 content: " ";
                 position: absolute;
