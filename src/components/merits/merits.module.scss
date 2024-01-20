@@ -1,0 +1,98 @@
+@import url("./../../assets/styles/fonts.scss");
+
+.merits {
+  background-color: #060607;
+  color: #dedede;
+
+  .merits__container {
+    padding: 152px 150px 195px 57px;
+    .merits__wrapper {
+      display: flex;
+      justify-content: space-between;
+      .merits_text {
+        margin-top: 57px;
+        .merits_text_items {
+          margin-bottom: 61px;
+
+          .merits_text_item {
+            font-family: "Ermilov-Bold";
+            text-transform: uppercase;
+            font-size: 63px;
+            line-height: 72px;
+          }
+        }
+
+        small {
+          font-family: "Inter-Medium";
+          font-size: 20px;
+          line-height: 39px;
+        }
+      }
+
+      .merits__titles {
+        font-family: "Inter-SemiBold";
+        .title__items {
+          max-width: 282px;
+          .title__item {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-bottom: 61px;
+            .title_item__img_conteiner {
+              margin-bottom: 28px;
+              position: relative;
+              display: flex;
+              align-items: flex-end;
+              justify-content: center;
+
+              &::after {
+                content: " ";
+                position: absolute;
+                bottom: -3px;
+                width: 160.45px;
+                height: 14.95px;
+                border-radius: 10px;
+                border: 1px solid;
+                backdrop-filter: blur(26px) saturate(200%) contrast(200%);
+              }
+            }
+
+            .title_item__text {
+              font-size: 22px;
+              text-transform: uppercase;
+              line-height: 35px;
+            }
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            &:nth-child(1) {
+              .title_item__img_conteiner {
+                &::after {
+                  border-color: #ff9100;
+                }
+              }
+            }
+
+            &:nth-child(2) {
+              .title_item__img_conteiner {
+                &::after {
+                  border-color: #9747ff;
+                }
+              }
+            }
+
+            &:nth-child(3) {
+              .title_item__img_conteiner {
+                &::after {
+                  border-color: #2072fa;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

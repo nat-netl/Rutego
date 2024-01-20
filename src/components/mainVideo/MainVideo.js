@@ -4,7 +4,7 @@ import video from "./../../assets/video/main.mp4";
 
 const MainVideo = () => {
   return (
-    <div className={s.mainVideo}>
+    <section className={s.mainVideo}>
       <div className={s.mainVideo__container}>
         <div className={s.container__video}>
           <div className={s.background} />
@@ -27,7 +27,7 @@ const MainVideo = () => {
             </div>
           </div>
       </div>
-    </div>
+    </section>
   );
 };
 
