@@ -7,8 +7,6 @@ const Possibilities = () => {
       <div className={s.possibilities__container}>
         <div className={s.figure__bottom}></div>
         <div className={s.figure__left}></div>
-
-
         <div className={s.possibilities__wrapper}>
           <div className={s.possibilities_wrapper__items}>
             <div className={s.possibilities_item1}>

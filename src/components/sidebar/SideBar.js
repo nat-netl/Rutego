@@ -3,6 +3,8 @@ import s from "./sideBar.module.scss";
 import logo from "./../../assets/img/logo.png";
 import Navigation from "../navigation/Navigation";
 
+// export const Context = React.createContext()
+
 const SideBar = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
@@ -17,7 +19,7 @@ const SideBar = () => {
           </div>
 
           <div className={s.acivateSidebar}>
-            <a className={s.acivateSidebar__link} href="/#" />
+            <button onClick={() => setOpenMenu(true)} className={s.acivateSidebar__link}/>
           </div>
         </div>
       </div>

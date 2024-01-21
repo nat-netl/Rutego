@@ -1,15 +1,41 @@
+@keyframes aniOpen {
+    0% {transform: translateX(-150%);}
+    100% {transform: translateY(0);}
+  }
+.open {
+  display: block;
+}
+.close {
+  display: none;
+}
 .navigation {
   position: fixed;
   z-index: 2;
   height: 100%;
   width: 308px;
   font-family: "Inter-Regular";
+  animation: aniOpen 2s forwards;
 
   .navigation__container {
     backdrop-filter: blur(26px) saturate(200%) contrast(200%);
     border: 1px solid #808080;
     border-radius: 0px 15px 15px 0px;
     height: 100%;
+    display: flex;
+    align-items: center;
+
+    .navigation__close {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      right: -21px;
+      border: 1px solid #808080;
+      background-color: #a60c0c;
+      position: absolute;
+      background-image: url("./../../assets/img/close.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
 
     .navigation__wrapper {
       padding: 30px 57px 62px 0;
