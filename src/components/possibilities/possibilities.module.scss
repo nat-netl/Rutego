@@ -1,0 +1,136 @@
+@import url("./../../assets/styles/fonts.scss");
+
+.possibilities {
+  position: relative;
+  .possibilities__container {
+    .figure__bottom {
+      background-image: url("./../../assets/img/Polygon1.png");
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-position: 57% bottom;
+    }
+    .figure__left {
+      background-image: url("./../../assets/img/Polygon2.png");
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-position: left 22%;
+      left: -80px;
+    }
+
+    .possibilities__wrapper {
+      padding: 69px 86px 63px 24px;
+      background-color: #060607;
+      color: #ffffff;
+      font-family: "Inter-Bold";
+      font-size: 125px;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      .possibilities_wrapper__items {
+        .possibilities_item1 {
+          display: flex;
+          align-items: baseline;
+          div {
+            margin-right: 64px;
+          }
+          p {
+            font-size: 67px;
+          }
+        }
+        .possibilities_item2 {
+          display: flex;
+          margin-left: 10.5%;
+          div {
+            margin-right: 21px;
+          }
+          p {
+            font-size: 20px;
+            color: #ff0000;
+            position: relative;
+            top: 25px;
+          }
+        }
+        .possibilities_item3 {
+          display: flex;
+          margin-left: 10.5%;
+          div {
+            margin-right: 6px;
+          }
+          p {
+            background-image: url("./../../assets/img/planet.png");
+            width: 39px;
+            height: 38px;
+            background-repeat: no-repeat;
+            position: relative;
+            top: 25px;
+          }
+        }
+        .possibilities_item4 {
+          display: flex;
+          align-items: center;
+          margin-left: 2%;
+          .item4 {
+            position: relative;
+            margin-right: 151px;
+            display: flex;
+            align-items: center;
+
+            div {
+              z-index: 1;
+            }
+            &::before {
+              content: "〕";
+              font-size: 165px;
+              position: absolute;
+              color: #ff0000;
+              z-index: 2;
+              right: -160px;
+              bottom: -10px;
+            }
+            &::after {
+              content: "〔";
+              font-size: 165px;
+              position: absolute;
+              color: #ff0000;
+              left: -39px;
+              right: 0;
+              bottom: -10px;
+            }
+          }
+          p {
+            font-size: 15px;
+            text-transform: math-auto;
+            font-family: "Inter-Regular";
+          }
+        }
+        .possibilities_item5 {
+          display: flex;
+          margin-left: 29%;
+
+          div {
+            margin-right: 49px;
+          }
+
+          p {
+            color: #a5a5a5;
+            font-size: 100px;
+          }
+        }
+        .possibilities_item6 {
+          display: flex;
+          align-items: center;
+          p {
+            background-image: url("./../../assets/img/line.png");
+            background-repeat: no-repeat;
+            height: 100px;
+            width: 38px;
+          }
+        }
+      }
+    }
+  }
+}
