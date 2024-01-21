@@ -3,16 +3,13 @@
 .merits {
   background-color: #060607;
   color: #dedede;
-
   .merits__container {
     padding: 152px 150px 195px 57px;
-
     .merits__wrapper {
       display: flex;
       justify-content: space-between;
       .merits_text {
         margin-top: 57px;
-
         .merits_text_items {
           .merits_text_item {
             font-family: "Ermilov-Bold";
@@ -29,7 +26,6 @@
           line-height: 39px;
         }
       }
-
       .merits__titles {
         font-family: "Inter-SemiBold";
         .title__items {
@@ -65,7 +61,6 @@
                 backdrop-filter: blur(26px) saturate(200%) contrast(200%);
               }
             }
-
             .title_item__text {
               font-size: 22px;
               text-transform: uppercase;
@@ -74,7 +69,6 @@
             &:last-child {
               margin-bottom: 0;
             }
-
             &:nth-child(1) {
               .title_item__img_conteiner {
                 &::after {
@@ -82,7 +76,6 @@
                 }
               }
             }
-
             &:nth-child(2) {
               .title_item__img_conteiner {
                 &::after {
@@ -90,7 +83,6 @@
                 }
               }
             }
-
             &:nth-child(3) {
               .title_item__img_conteiner {
                 &::after {
@@ -109,31 +101,12 @@
   .merits {
     .merits__container {
       padding: 136px 20px 181px 24px;
-
       .merits__wrapper {
         .merits_text {
           margin-top: 0;
-
           .merits_text_items {
             .merits_text_item {
               margin-bottom: 61px;
-            }
-          }
-
-          small {
-          }
-        }
-
-        .merits__titles {
-          .title__items {
-            .title__item {
-              .title_item__img_conteiner {
-                .title_item__img {
-                }
-              }
-
-              .title_item__text {
-              }
             }
           }
         }
@@ -167,13 +140,6 @@
           .title__items {
             .title__item {
               margin-bottom: 50px;
-              .title_item__img_conteiner {
-                .title_item__img {
-                }
-              }
-
-              .title_item__text {
-              }
             }
           }
         }
