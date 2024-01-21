@@ -16,7 +16,7 @@
             text-transform: uppercase;
             font-size: 63px;
             line-height: 72px;
-            margin-bottom: 50px;
+            margin-bottom: 0;
           }
         }
 
@@ -126,6 +126,8 @@
           .merits_text_items {
             .merits_text_item {
               font-size: 34px;
+              margin-bottom: 20px;
+              line-height: 30px;
             }
           }
 
