@@ -17,7 +17,6 @@ const Possibilities = () => {
             </div>
             <div className={s.possibilities_item2}>
               <div>landing-page</div>
-              <p>Выгодно</p>
             </div>
             <div className={s.possibilities_item3}>
               <div>интернет магазины</div>

@@ -46,27 +46,31 @@
           margin-left: 10.5%;
           div {
             margin-right: 21px;
-          }
-          p {
-            font-size: 20px;
-            color: #ff0000;
             position: relative;
-            top: 25px;
+            &::after {
+              content: "ВЫГОДНО";
+              font-size: 20px;
+              color: #ff0000;
+              position: absolute;
+              top: 25px;
+            }
           }
         }
         .possibilities_item3 {
           display: flex;
           margin-left: 10.5%;
+          position: relative;
           div {
-            margin-right: 6px;
-          }
-          p {
-            background-image: url("./../../assets/img/planet.png");
-            width: 39px;
-            height: 38px;
-            background-repeat: no-repeat;
-            position: relative;
-            top: 25px;
+            &::after {
+              content: "";
+              margin-right: 6px;
+              background-image: url("./../../assets/img/planet.png");
+              background-repeat: no-repeat;
+              position: absolute;
+              top: 30px;
+              width: 39px;
+              height: 38px;
+            }
           }
         }
         .possibilities_item4 {
@@ -110,7 +114,7 @@
         .possibilities_item5 {
           display: flex;
           margin-left: 29%;
-
+          align-items: baseline;
           div {
             margin-right: 49px;
           }
@@ -128,6 +132,186 @@
             background-repeat: no-repeat;
             height: 100px;
             width: 38px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .possibilities {
+    .possibilities__container {
+      .figure__bottom {
+      }
+      .figure__left {
+        display: none;
+      }
+
+      .possibilities__wrapper {
+        padding: 210px 0 145px 24px;
+        font-size: 85px;
+        justify-content: flex-start;
+        .possibilities_wrapper__items {
+          div {
+            flex-wrap: wrap;
+          }
+          .possibilities_item1 {
+            div {
+            }
+          }
+          .possibilities_item2 {
+            div {
+              &::after {
+                top: 15px;
+              }
+            }
+          }
+          .possibilities_item3 {
+            div {
+              &::after {
+                top: 20px;
+              }
+            }
+          }
+          .possibilities_item4 {
+            .item4 {
+              &::after {
+                font-size: 97px;
+                left: -3%;
+              }
+              &::before {
+                font-size: 97px;
+                right: -16%;
+              }
+            }
+            p {
+              font-size: 11px;
+            }
+          }
+          .possibilities_item5 {
+            div {
+            }
+            p {
+              font-size: 65px;
+            }
+          }
+          .possibilities_item6 {
+            p {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .figure__bottom {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .possibilities {
+    .possibilities__container {
+      .figure__bottom {
+      }
+      .figure__left {
+        display: none;
+      }
+
+      .possibilities__wrapper {
+        padding: 40px 10px 145px 10px;
+        font-size: 34px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+
+        .possibilities_wrapper__items {
+          div {
+            flex-wrap: wrap;
+          }
+
+          .possibilities_item1,
+          .possibilities_item2,
+          .possibilities_item3,
+          .possibilities_item4,
+          .possibilities_item5 {
+            margin-bottom: 20px;
+          }
+          .possibilities_item1 {
+            display: block;
+            div {
+              margin-right: 0;
+              margin-bottom: 20px;
+            }
+            p {
+              font-size: 34px;
+            }
+          }
+          .possibilities_item2 {
+            margin-left: 0;
+            justify-content: center;
+            div {
+              &::after {
+                top: 3px;
+                font-size: 11px;
+              }
+            }
+          }
+          .possibilities_item3 {
+            margin-left: 0;
+            justify-content: center;
+            div {
+              &::after {
+                top: 8px;
+                margin: 0;
+                width: 28px;
+                height: 28px;
+                background-size: 18px;
+              }
+            }
+          }
+          .possibilities_item4 {
+            justify-content: center;
+            margin-bottom: 20px;
+
+            .item4 {
+              margin-right: 0;
+
+              &::after {
+                font-size: 34px;
+                left: -16%;
+                bottom: 0;
+                right: auto;
+              }
+              &::before {
+                font-size: 34px;
+                right: -16%;
+                bottom: 0;
+              }
+            }
+            p {
+              display: none;
+            }
+          }
+          .possibilities_item5 {
+            margin-left: 0;
+            justify-content: center;
+            div {
+              margin: 0;
+            }
+            p {
+              display: none;
+            }
+          }
+          .possibilities_item6 {
+            justify-content: center;
+            p {
+              height: 44px;
+            }
           }
         }
       }

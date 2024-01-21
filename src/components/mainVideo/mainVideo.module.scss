@@ -2,93 +2,215 @@
 
 .mainVideo {
   .mainVideo__container {
-    position: relative;
+    .mainVideo__wrapper {
+      position: relative;
 
-    .container__video {
-      width: 100%;
-      height: 100%;
-      max-width: none;
-      object-fit: cover;
-      display: flex;
-
-      .background {
-        content: " ";
-        background-image: url("./../../assets/img/background.png");
+      .container__video {
         width: 100%;
         height: 100%;
-        position: absolute;
-        top: 0;
+        max-width: none;
+        object-fit: cover;
+        display: flex;
+
+        .background {
+          content: " ";
+          background-image: url("./../../assets/img/background.png");
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+        }
+        .video__item {
+          width: 100%;
+        }
       }
-      .video__item {
-        width: 100%;
+      .mainText {
+        .mainText__container {
+          z-index: 1;
+          position: absolute;
+          top: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+
+          .mainText__wrapper {
+            max-width: 1646px;
+            max-height: 827px;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background: url("./../../assets/img/cross.png") center top no-repeat,
+              url("./../../assets/img/cross.png") center bottom no-repeat,
+              url("./../../assets/img/cross.png") 20% top no-repeat,
+              url("./../../assets/img/cross.png") 80% top no-repeat,
+              url("./../../assets/img/cross.png") 20% center no-repeat,
+              url("./../../assets/img/cross.png") 50% center no-repeat,
+              url("./../../assets/img/cross.png") 80% center no-repeat,
+              url("./../../assets/img/cross.png") 20% bottom no-repeat,
+              url("./../../assets/img/cross.png") 80% bottom no-repeat;
+            background-size: 20px;
+
+            .mainText__title {
+              text-transform: uppercase;
+              color: #ffffff;
+              text-align: center;
+              align-self: center;
+              font-size: 85px;
+              font-family: "Ermilov-Bold";
+
+              div:nth-child(1) {
+                text-align: left;
+              }
+              div:nth-child(4) {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+              }
+              div:nth-child(4)::before {
+                content: "〕";
+                font-size: 117px;
+                position: absolute;
+                color: #ff0000;
+                right: -20%;
+              }
+              div:nth-child(4)::after {
+                content: "〔";
+                font-size: 117px;
+                position: absolute;
+                color: #ff0000;
+                left: 0;
+                right: 0;
+              }
+            }
+          }
+        }
       }
     }
-    .mainText {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .mainText__container {
-        z-index: 1;
-        position: absolute;
-        top: 10%;
-        max-width: 1646px;
-        max-height: 827px;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        background: url("./../../assets/img/cross.png") left top no-repeat,
-          url("./../../assets/img/cross.png") center top no-repeat,
-          url("./../../assets/img/cross.png") right top no-repeat,
-          url("./../../assets/img/cross.png") left center no-repeat,
-          url("./../../assets/img/cross.png") left bottom no-repeat,
-          url("./../../assets/img/cross.png") center bottom no-repeat,
-          url("./../../assets/img/cross.png") right bottom no-repeat,
-          url("./../../assets/img/cross.png") right center no-repeat,
-          url("./../../assets/img/cross.png") 25% top no-repeat,
-          url("./../../assets/img/cross.png") 75% top no-repeat,
-          url("./../../assets/img/cross.png") 25% center no-repeat,
-          url("./../../assets/img/cross.png") 50% center no-repeat,
-          url("./../../assets/img/cross.png") 75% center no-repeat,
-          url("./../../assets/img/cross.png") 76% center no-repeat,
-          url("./../../assets/img/cross.png") 25% bottom no-repeat,
-          url("./../../assets/img/cross.png") 75% bottom no-repeat,
-          url("./../../assets/img/cross.png") 51% bottom no-repeat,
-          url("./../../assets/img/cross.png") 76% bottom no-repeat;
+  }
+}
 
-        .mainText__title {
-          width: 928px;
-          z-index: 2;
-          text-transform: uppercase;
-          color: #ffffff;
-          text-align: center;
-          align-self: center;
-          font-size: 126px;
-          font-family: "Ermilov-Bold";
+@media only screen and (min-width: 1440px) {
+  .mainVideo {
+    .mainVideo__container {
+      .mainVideo__wrapper {
+        .mainText {
+          .mainText__container {
+            .mainText__wrapper {
+              background: url("./../../assets/img/cross.png") left top no-repeat,
+                url("./../../assets/img/cross.png") center top no-repeat,
+                url("./../../assets/img/cross.png") right top no-repeat,
+                url("./../../assets/img/cross.png") left center no-repeat,
+                url("./../../assets/img/cross.png") left bottom no-repeat,
+                url("./../../assets/img/cross.png") center bottom no-repeat,
+                url("./../../assets/img/cross.png") right bottom no-repeat,
+                url("./../../assets/img/cross.png") right center no-repeat,
+                url("./../../assets/img/cross.png") 25% top no-repeat,
+                url("./../../assets/img/cross.png") 75% top no-repeat,
+                url("./../../assets/img/cross.png") 25% center no-repeat,
+                url("./../../assets/img/cross.png") 50% center no-repeat,
+                url("./../../assets/img/cross.png") 75% center no-repeat,
+                url("./../../assets/img/cross.png") 76% center no-repeat,
+                url("./../../assets/img/cross.png") 25% bottom no-repeat,
+                url("./../../assets/img/cross.png") 75% bottom no-repeat,
+                url("./../../assets/img/cross.png") 51% bottom no-repeat,
+                url("./../../assets/img/cross.png") 76% bottom no-repeat;
+              background-size: inherit;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
-          div:nth-child(1) {
-            text-align: left;
+@media only screen and (max-width: 1440px) {
+  .mainVideo {
+    .mainVideo__container {
+      .mainVideo__wrapper {
+        .mainText {
+          .mainText__container {
+            .mainText__wrapper {
+              .mainText__title {
+                text-transform: uppercase;
+                color: #ffffff;
+                text-align: center;
+                align-self: center;
+                font-size: 85px;
+                font-family: "Ermilov-Bold";
+
+                div:nth-child(4)::before {
+                  font-size: 110px;
+                  position: absolute;
+                  right: -18%;
+                }
+                div:nth-child(4)::after {
+                  font-size: 110px;
+                }
+              }
+            }
           }
-          div:nth-child(4) {
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .mainVideo {
+    .mainVideo__container {
+      .mainVideo__wrapper {
+        .mainText {
+          .mainText__container {
+            .mainText__wrapper {
+              .mainText__title {
+                font-size: 65px;
+
+                div:nth-child(4)::before {
+                  right: -22%;
+                }
+              }
+            }
           }
-          div:nth-child(4)::before {
-            content: "〕";
-            font-size: 165px;
-            position: absolute;
-            color: #ff0000;
-            right: -165px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .mainVideo {
+    .mainVideo__container {
+      .mainVideo__wrapper {
+        .container__video {
+          .video__item {
+            object-fit: cover;
+            height: 900px;
           }
-          div:nth-child(4)::after {
-            content: "〔";
-            font-size: 165px;
-            position: absolute;
-            color: #ff0000;
-            left: 0;
-            right: 0;
+        }
+        .mainText {
+          .mainText__container {
+            top: -20px;
+            align-items: flex-end;
+            .mainText__wrapper {
+              max-height: 590px;
+
+              .mainText__title {
+                align-self: flex-start;
+                font-size: 45px;
+
+                div:nth-child(4)::before {
+                  font-size: 60px;
+                  right: -18%;
+                }
+                div:nth-child(4)::after {
+                  font-size: 60px;
+                }
+              }
+            }
           }
         }
       }

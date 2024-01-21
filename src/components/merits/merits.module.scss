@@ -6,19 +6,20 @@
 
   .merits__container {
     padding: 152px 150px 195px 57px;
+
     .merits__wrapper {
       display: flex;
       justify-content: space-between;
       .merits_text {
         margin-top: 57px;
-        .merits_text_items {
-          margin-bottom: 61px;
 
+        .merits_text_items {
           .merits_text_item {
             font-family: "Ermilov-Bold";
             text-transform: uppercase;
             font-size: 63px;
             line-height: 72px;
+            margin-bottom: 50px;
           }
         }
 
@@ -95,6 +96,83 @@
                 &::after {
                   border-color: #2072fa;
                 }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .merits {
+    .merits__container {
+      padding: 136px 20px 181px 24px;
+
+      .merits__wrapper {
+        .merits_text {
+          margin-top: 0;
+
+          .merits_text_items {
+            .merits_text_item {
+              margin-bottom: 61px;
+            }
+          }
+
+          small {
+          }
+        }
+
+        .merits__titles {
+          .title__items {
+            .title__item {
+              .title_item__img_conteiner {
+                .title_item__img {
+                }
+              }
+
+              .title_item__text {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .merits {
+    .merits__container {
+      padding: 40px 20px 40px 24px;
+
+      .merits__wrapper {
+        .merits_text {
+
+          .merits_text_items {
+            .merits_text_item {
+              font-size: 34px;
+            }
+          }
+
+          small {
+            font-size: 16px;
+            line-height: 28px;
+          }
+        }
+
+        .merits__titles {
+          display: none;
+          .title__items {
+            .title__item {
+              margin-bottom: 50px;
+              .title_item__img_conteiner {
+                .title_item__img {
+                }
+              }
+
+              .title_item__text {
               }
             }
           }
